@@ -9,6 +9,8 @@ services:
       - 27017:27017
     networks:
       - local_network
+    volumes:
+      - mongodb_data:/data/
 
   redis:
     container_name: redis_channels
